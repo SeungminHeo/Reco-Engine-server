@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+#      host: 118.67.135.161
+      host: 10.41.167.152
+      port: 27017
+      database: jolp
+      username: jolp
+      password: Whfvm1234
+      repositories:
+        type: auto
