@@ -28,7 +28,7 @@ public class RecoRestService {
     }
 
     private String maxFromRecoResult(Map<String, Long> recoResult) {
-        Optional<Map.Entry<String, Long>> max = recoResult.entrySet().stream().max(Comparator.comparing(Map.Entry::getValue));
+        Optional<Map.Entry<String, Long>> max = recoResult.entrySet().stream().max(Map.Entry.comparingByValue());
         return max.get().getKey();
     }
 }
